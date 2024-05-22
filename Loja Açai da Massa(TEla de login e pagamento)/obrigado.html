@@ -1,0 +1,78 @@
+<!-- Adicionar informações do cartão vindo da pagina de pagamento nos inputs dessa página -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrigado</title>
+    <link rel="stylesheet" href="assets/styles/stylepagamento.css" />
+    <link rel="stylesheet" href="js/cart.js" />
+
+    <link rel="icon" href="assets/images/logoo.jpg" type="image/png" />
+  </head>
+  <body>
+    <div class="mainscreen">
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="https://img.freepik.com/fotos-gratis/deliciosa-xicara-de-sobremesa-brasileira-com-morangos_23-2149871603.jpg?size=626&ext=jpg&ga=GA1.1.1924339461.1713924249&semt=ais_user_b"
+            class="product"
+            alt="Shoes"
+          />
+        </div>
+        <div class="rightside">
+          <form action="obrigado.html">
+            <h1>Pagamento confirmado</h1>
+            <p>Número do pedido</p>
+            <input
+              class="inputbox"
+              name="card_number"
+              id="card_number"
+              disabled
+              value="#1"
+            />
+            <p>Valor total</p>
+            <input
+              type="text"
+              class="inputbox"
+              name="name"
+              value="R$23.99"
+              disabled
+            />
+
+            <h2>Informação do pagamento</h2>
+            <p>Tipo do cartão</p>
+            <select class="inputbox" name="card_type" id="card_type" disabled>
+              <option value="">--Selecione seu cartão --</option>
+              <option value="Visa" selected>Visa</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+            <div class="expcvv">
+              <p class="expcvv_text">Validade</p>
+              <input
+                type="date"
+                class="inputbox"
+                name="exp_date"
+                id="exp_date"
+                value="2023-12-31"
+                disabled
+              />
+
+              <p class="expcvv_text2">CVV</p>
+              <input
+                type="password"
+                class="inputbox"
+                name="cvv"
+                disabled
+                id="cvv"
+                value="223"
+              />
+            </div>
+            <p></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
